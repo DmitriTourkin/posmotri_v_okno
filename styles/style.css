@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -46,7 +48,6 @@ ol {
   box-sizing: border-box;
   max-width: 1140px;
   height: 534px;
-  margin-top: 133px;
 }
 
 .result__video-container {
