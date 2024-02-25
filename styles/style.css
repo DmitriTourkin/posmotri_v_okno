@@ -162,7 +162,7 @@ ol {
   white-space: nowrap;
 }
 
-/*Поля формы*/
+/* Поля формы */
 
 .search-form__fieldset {
   min-width: 225px;
@@ -265,6 +265,19 @@ ol {
 
 /* Состояния форм и кнопок */
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:active {
+  border: 1px solid white;
+}
+
+.search-form__label:has(.search-form__textfield:focus-visible) {
+  outline: 1px solid white;
+  outline-offset: 1.5px;
+}
+
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
   width: 15px;
   height: 15px;
@@ -278,22 +291,9 @@ ol {
   text-underline-offset: 3px;
 }
 
-.search-form__textfield:active {
-  border: 1px solid white;
-}
-
-.search-form__label:has(.search-form__textfield:focus-visible) {
-  outline: 1px solid white;
-  outline-offset: 1.5px;
-}
-
 .search-form__label:has(.search-form__checkbox:focus-visible) {
   outline: 1px solid white;
   outline-offset: 1.3px;
-}
-
-.search-form__textfield:focus {
-  outline: none;
 }
 
 .search-form__label:focus {
