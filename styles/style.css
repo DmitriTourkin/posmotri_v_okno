@@ -110,6 +110,8 @@ ol {
 
 .result__video-container {
   position: relative;
+  object-fit: cover;
+  object-position: center;
 }
 
 .search-form__fieldset-title {
@@ -327,4 +329,4 @@ ol {
 
 .content__card-link_current {
   background-color: #545050;
-}
+} 
