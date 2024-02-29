@@ -102,6 +102,8 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
   height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .content__video-card-description-container {
